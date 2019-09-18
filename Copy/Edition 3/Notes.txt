@@ -1,0 +1,28 @@
+-   What is Node JS?
+    JavaScript cannot be used outside the browser, before Node JS
+    Now, JavaScript can be run in the BE (severs)
+    Node JS uses the Chrome's V8 engine
+    It's uses event-driven, non-blocking I/O model
+    ** Node JS is not a programming language
+    ** Node JS is a JavaScript runtime
+
+-   The V8 JavaScript engine
+    ** The engine itself is written in C++
+    So, when Node JS code is wriiten, behind the scenes, some C++ function gets executed
+
+-   REPL
+    Read Eval Print Loop
+
+-   The variable 'global'
+    This is similar to 'window' in the Chrome browser
+
+-   The variable 'process'
+    This is similar to 'document' in the Chrome browser
+
+-   Arrow functions never bind 'this' keyword to themseves unlike ordinary functions
+
+-   ** Making a request using core node module - Section 6 Lecture 41 - Important for interviews
+
+-   Why do we need a web server for a node app?
+    Instead of running commands for the terminal, we can access the app using a URL if we deploy the app in the web server
+
