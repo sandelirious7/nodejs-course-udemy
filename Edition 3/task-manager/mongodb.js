@@ -11,40 +11,17 @@ const databaseName = 'task-manager'
 
 MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) => {
     if (error) {
+        console.log(error)
         return console.log('Unable to connect to database')
     }
 
     const db = client.db(databaseName)
 
-    // db
-    //     .collection('users')
-    //     .updateOne(
-    //         { _id: new ObjectID('5d84a14add761a382c4c5c07') },
-    //         {
-    //             $inc: {
-    //                 age: 1
-    //             }
-    //         }
-    //     )
-    //     .then((result) => {
-    //         console.log(result)
-    //     })
-    //     .catch((error) => {
-    //         console.log(error)
-    //     })
-
     db
         .collection('tasks')
-        .updateMany(
-            {
-                completed: false
-            },
-            {
-                $set: {
-                    completed: true
-                }
-            }
-        )
+        .deleteOne({
+            description: 'Clean the house'
+        })
         .then((result) => {
             console.log(result)
         })
