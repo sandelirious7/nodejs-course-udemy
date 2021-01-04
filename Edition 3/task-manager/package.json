@@ -4,14 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandelirious7/task-manager-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandelirious7/task-manager-api/issues"
+  },
+  "homepage": "https://github.com/sandelirious7/task-manager-api#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
     "mongodb": "^3.1.10",
     "mongoose": "^5.3.16",
     "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
